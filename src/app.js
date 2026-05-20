@@ -18,12 +18,19 @@ const app = express();
 
 // Middlewares
 app.use(express.json());
+
 app.use(
   cors({
     origin: "*",
   })
 );
-app.use(helmet());
+
+app.use(
+  helmet({
+    contentSecurityPolicy: false,
+  })
+);
+
 app.use(morgan("dev"));
 app.use(cookieParser());
 app.use(limiter)
