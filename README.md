@@ -59,7 +59,7 @@ src/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/expense-tracker-api.git
+git clone https://github.com/kalpanaCharpe/expense-tracker-api.git
 ```
 
 ### Move Into Project Folder
